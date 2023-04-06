@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.skyve.org/xml/document" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Branch" xsi:schemaLocation="http://www.skyve.org/xml/document ../../../schemas/document.xsd">
+    <persistent name="HEL_Branch"/>
+    <singularAlias>Branch</singularAlias>
+    <pluralAlias>Branches</pluralAlias>
+    <bizKey expression="Branch - {branchId}"/>
+    <attributes>
+        <integer required="true" name="branchId">
+            <displayName>Branch Id</displayName>
+        </integer>
+        <text required="true" name="branchName">
+            <displayName>Branch Name</displayName>
+            <length>15</length>
+        </text>
+    </attributes>
+</document>

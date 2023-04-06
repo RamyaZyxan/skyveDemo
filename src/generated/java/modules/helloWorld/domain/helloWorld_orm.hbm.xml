@@ -11,4 +11,31 @@
 	<typedef name="TimeOnly" class="org.skyve.impl.domain.types.TimeOnlyUserType" />
 	<typedef name="Timestamp" class="org.skyve.impl.domain.types.TimestampUserType" />
 	<typedef name="Enum" class="org.skyve.impl.domain.types.EnumUserType" />
+	<class name="modules.helloWorld.domain.Branch" table="HEL_Branch" entity-name="helloWorldBranch">
+		<id name="bizId" length="36" />
+		<version name="bizVersion" unsaved-value="null" />
+		<property name="bizLock" type="OptimisticLock" length="271" not-null="true" />
+		<property name="bizKey" length="1024" not-null="true" />
+		<property name="bizCustomer" length="50" not-null="true" />
+		<property name="bizFlagComment" length="1024" />
+		<property name="bizDataGroupId" length="36" />
+		<property name="bizUserId" length="36" not-null="true" />
+		<property name="branchId" />
+		<property name="branchName" length="15" />
+		<filter name="helloWorldBranchNoneFilter" condition="1=0"/>
+		<filter name="helloWorldBranchCustomerFilter" condition="bizCustomer=:customerParam"/>
+		<filter name="helloWorldBranchDataGroupIdFilter" condition="bizDataGroupId=:dataGroupIdParam"/>
+		<filter name="helloWorldBranchUserIdFilter" condition="bizUserId=:userIdParam"/>
+	</class>
+
+	<filter-def name="helloWorldBranchNoneFilter" />
+	<filter-def name="helloWorldBranchCustomerFilter">
+		<filter-param name="customerParam" type="string"/>
+	</filter-def>
+	<filter-def name="helloWorldBranchDataGroupIdFilter">
+		<filter-param name="dataGroupIdParam" type="string"/>
+	</filter-def>
+	<filter-def name="helloWorldBranchUserIdFilter">
+		<filter-param name="userIdParam" type="string"/>
+	</filter-def>
 </hibernate-mapping>

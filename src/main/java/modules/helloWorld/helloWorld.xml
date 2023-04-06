@@ -4,6 +4,7 @@
     <homeDocument>Demonstration</homeDocument>
     <documents>
         <document ref="Demonstration"/>
+        <document ref="Branch"/>
     </documents>
     <roles>
         <role name="Viewer">
@@ -12,6 +13,7 @@
                 <document name="Demonstration" permission="_R__C">
                     <action name="EchoText"/>
                 </document>
+                <document name="Branch" permission="_R__C"/>
             </privileges>
             <accesses/>
         </role>
@@ -21,6 +23,7 @@
                 <document name="Demonstration" permission="CRUDC">
                     <action name="EchoText"/>
                 </document>
+                <document name="Branch" permission="CRUDC"/>
             </privileges>
             <accesses/>
         </role>
@@ -30,5 +33,9 @@
             <role name="Maintainer"/>
             <role name="Viewer"/>
         </edit>
+        <list document="Branch" name="Branches">
+            <role name="Maintainer"/>
+            <role name="Viewer"/>
+        </list>
     </menu>
 </module>
