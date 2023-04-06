@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.skyve.org/xml/document" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Demonstration" xsi:schemaLocation="http://www.skyve.org/xml/document ../../../schemas/document.xsd">
+    <documentation><![CDATA[The Demonstration document has two attributes, inputText and outputText for up to 100 characters. 
+		
+		The inputText attribute has a default value of "Hello World", the attribute is marked as required, 
+			meaning no processing should occur unless this attribute has a value.
+		
+		In this demonstration, no data is saved to the database and so this document does not include a <persistent/> tag.
+		
+		Read more at https://skyvers.github.io/skyve-dev-guide/documents/]]></documentation>
+    <singularAlias>Demonstration</singularAlias>
+    <pluralAlias>Demonstrations</pluralAlias>
+    <iconStyleClass>fa fa-hand-paper-o</iconStyleClass>
+    <bizKey expression="Demonstration"/>
+    <attributes>
+        <text required="true" name="inputText">
+            <displayName>Input Text</displayName>
+            <defaultValue>Hello World</defaultValue>
+            <length>100</length>
+        </text>
+        <text name="outputText">
+            <displayName>Output Text</displayName>
+            <length>100</length>
+        </text>
+    </attributes>
+</document>

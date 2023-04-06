@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view xmlns="http://www.skyve.org/xml/view" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="edit" title="Hello World Demonstration" xsi:schemaLocation="http://www.skyve.org/xml/view ../../../../schemas/view.xsd">
+    <form responsiveWidth="12" border="true" borderTitle="Hello World">
+    	<!-- A two column table using the responsive sizing.
+    		The first column will be for widget labels and the second column is for the widgets.
+    	-->
+        <column responsiveWidth="3"/>
+        <column />
+        <row>
+        	<item>
+        		<!-- a spacer leaves an empty column for this row-->
+        		<spacer/>
+        	</item>
+        	<item>
+        		<!-- use a blurb when you want to output any html text -->
+        		<blurb>
+        			<![CDATA[
+        				<strong>
+        					Enter some text into the <em>Input Text</em> field below and click the <em>Echo Text</em> button to copy your text into the <em>Output Text</em> field.
+        				</strong>
+        			]]>
+        		</blurb>
+        	</item>
+        </row>
+        <row>
+            <item>
+            	<!-- Using a default widget means "let Skyve decide" what widget is required for this attribute. 
+            		A default widget includes the label in the first column.
+            	-->
+                <default binding="inputText"/>
+            </item>
+        </row>
+        <row>
+        	<item>
+        		<spacer/>
+        	</item>
+        	<item>
+        		<!-- The action button widget is specified here for the layout, but declared in the actions section below. -->
+        		<button action="EchoText" pixelWidth="150"/>
+        	</item>
+        </row>
+        <row>
+        	<item>
+        		<!-- Instead of using a default widget, we can use specific widgets to use extended properties like "disabled".-->
+        		<textField binding="outputText" disabled="true"/>
+        	</item>
+        </row>
+    </form>
+    <!-- A component is a separate view file - use components to simplify layouts or for re-use -->
+   	<component name="_moreInformation"/>
+    <actions>
+    	<!-- Actions used in this view are declared here, 
+    		but permission to use this action must also be granted to the role in the helloWorld.xml module declaration.-->
+        <action className="EchoText" displayName="Echo Text" inActionPanel="false" clientValidation="true" iconStyleClass="fa fa-refresh"/>
+    </actions>
+    <newParameters/>
+</view>

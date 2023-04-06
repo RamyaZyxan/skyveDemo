@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view xmlns="http://www.skyve.org/xml/view" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="_moreInformation" xsi:schemaLocation="http://www.skyve.org/xml/view ../../../../schemas/view.xsd" title="Hello World">
+    <form border="true" borderTitle="More information...">
+    	<column/>
+    	<row>
+    		<item>
+    			<blurb>
+    				<![CDATA[
+    				<p><strong>Hello and welcome to Skyve!</strong>
+    				<br/>This application has two <em>Modules</em> (represented as two menu sections on the left):
+    				<ul>
+    					<li><strong>Admin</strong> - a full-function administration module that is included in every Skyve application. Take a moment to look through the features available (that you won't have to build!).</li>
+    					<li><strong>Hello World</strong> - this demonstration module.</li>
+    				</ul>
+    				Skyve has two rendering modes to suit different user agents/device types, responsive mode and single-page-application (also called "desktop" mode). 
+    				Skyve applications will (by default) automatically switch to use the most suitable rendering for the user agent or device type it detects.
+    				If you are using a laptop or desktop, try the switcher (above right) <i class='fa fa-share-square-o'></i> to switch between the two modes. 
+    				The "desktop" mode includes extensive ad-hoc searching, filtering and export capabilities.
+    				</p>
+    				<p><strong>Making changes</strong>
+    				You can make changes to this project:
+    				<ul>
+    					<li>in Skyve Foundry - to include more <em>Documents</em> and <em>Attributes</em> go back to your project and investigate the <em>Data Design</em> tab, or</li> 
+    					<li>in your preferred Integrated Development Environment (IDE) using collaboration via a <em>Git</em> repository - to set this up follow <a href="https://foundry.skyve.org/foundry/?a=e&m=foundry&d=Help#/collaboration">these instructions</a> in the <a href="https://foundry.skyve.org/foundry/?a=e&m=foundry&d=Help#/">Skyve Foundry User Guide</a>.</li>
+    				</ul> 
+    				</p>
+    				<p><strong>Support</strong>
+    				<br/>You can create and run your own Skyve applications for free - no matter how many users or modules you use. Skyve applications can be fully customised and branded for your organisation.
+    				<br/>If you need help, we offer:
+    				<ul>
+    					<li><strong>A free trial server</strong> - available so that you can build and try your own applications, or demonstrations like these.</li>
+    					<li><strong>Paid hosts</strong> - If you don't want to run or configure your own infrastructure, we provide pre-configured hosts for a low monthly fee.</li>
+    					<li><strong>Tailored virtual training</strong> - We can tailor virtual training for you or your organisation.</li>
+    					<li><strong>Paid by-the-hour expertise</strong> - Get direct help from one of our Skyve experts to help you design and build the application you need.</li>
+    				</ul>
+    				For more support options, contact us at <a href="mailto:info@skyve.org">info@skyve.org</a>.
+    				</p>
+    				<p><strong>Getting started</strong>
+    				<br/>To learn how to get started with Skyve, you may like to try:
+    				<ul>
+    					<li>the <a href="https://skyvers.github.io/Aged-care/">Getting Started Tutorial</a></li>
+						<li>the <a href="https://skyvers.github.io/skyve-dev-guide/">Skyve Dev Guide</a></li> 
+						<li>our <a href="https://join.slack.com/t/skyveframework/shared_invite/enQtNDMwNTcyNzE0NzI2LTRkMWUxZDBlZmFlMmJkMjQzYWMzYWQxMmQzYWQ1ZTdlODNkNjRlYzVhYjFmMmQ4NTlhYWY4MjNhMGVkZGNlMjY">public Slack channel</a></li>
+						<li>the <a href="https://foundry.skyve.org/foundry/?a=e&m=foundry&d=Help#/">Skyve Foundry User Guide</a> (you'll need to be logged into Foundry to access this).</li>
+					</ul>
+					Or, if you're posting a question to Stack Overflow, use the <strong>skyve</strong> tag so we can find it and respond.
+    				</p>
+    				<p><strong>Happy Skyving!</strong></p>
+    				]]>
+    			</blurb>
+    		</item>
+    	</row>
+    </form>
+</view>

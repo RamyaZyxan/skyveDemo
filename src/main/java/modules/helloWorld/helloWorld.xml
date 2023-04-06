@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://www.skyve.org/xml/module" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" title="Hello World" prototype="true" name="helloWorld" xsi:schemaLocation="http://www.skyve.org/xml/module ../../schemas/module.xsd">
+    <homeRef>edit</homeRef>
+    <homeDocument>Demonstration</homeDocument>
+    <documents>
+        <document ref="Demonstration"/>
+    </documents>
+    <roles>
+        <role name="Viewer">
+            <description><![CDATA[Enough privileges to view Hello World documents.]]></description>
+            <privileges>
+                <document name="Demonstration" permission="_R__C">
+                    <action name="EchoText"/>
+                </document>
+            </privileges>
+            <accesses/>
+        </role>
+        <role name="Maintainer">
+            <description><![CDATA[Enough privileges to create and edit Hello World documents.]]></description>
+            <privileges>
+                <document name="Demonstration" permission="CRUDC">
+                    <action name="EchoText"/>
+                </document>
+            </privileges>
+            <accesses/>
+        </role>
+    </roles>
+    <menu>
+        <edit document="Demonstration" name="Demonstration">
+            <role name="Maintainer"/>
+            <role name="Viewer"/>
+        </edit>
+    </menu>
+</module>
